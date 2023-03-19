@@ -3,11 +3,14 @@ package TicTacToe.models;
 public class Move {
 
     private Player player;
-    private Cell cell;
+    private int row;
+    private int col;
 
-    public Move(Player player, Cell cell){
+    public Move(Player player, int row, int col){
         this.player = player;
-        this.cell = cell;
+        this.row = row;
+        this.col = col;
+
     }
 
     public Player getPlayer() {
@@ -18,11 +21,19 @@ public class Move {
         this.player = player;
     }
 
-    public Cell getCell() {
-        return cell;
+    public int getRow() {
+        return row;
     }
 
-    public void setCell(Cell cell) {
-        this.cell = cell;
+    public void setRow(int row) {
+        this.row = row;
+    }
+
+    public int getCol() {
+        return col;
+    }
+
+    public void setCol(int col) {
+        this.col = col;
     }
 }

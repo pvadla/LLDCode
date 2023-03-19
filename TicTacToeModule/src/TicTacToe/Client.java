@@ -54,7 +54,7 @@ public class Client {
             if(isUnDoRequired){
                 game.undo();
             }else{
-                game.nextMove();
+                game.makeNextMove();
             }
 
 
